@@ -33,28 +33,12 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+This software runs all numerical experiments, comparing different setups and enhancements of the column-and-constraint generation algorithm. It supports the figures and tables found in section 4.
 
 ## Building
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+The code is written in Python (3.12.6), using the Gurobi (12.0.3) solver. Its dependencies are numpy (2.3.2), gurobipy (13.0.1), scipy (1.16.1) and joblib (1.5.2).
 
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
 
 ## Results
 
